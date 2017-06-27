@@ -4,14 +4,58 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
 <head>
     <title>Grassroots Portal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+
+    <!-- bootstrap -->
+    <script src="scripts/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <link href="scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <!-- font awesome -->
+    <link href="scripts/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- jQuery -->
     <script type="text/javascript" src="scripts/jquery/jquery-1.11.3.min.js"></script>
-    <script>
-        $(function(){ $("head").load("head.html") });
-    </script>
+    <script type="text/javascript" src="scripts/jquery/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="scripts/jquery/jquery-ui-1.11.4.custom/jquery-ui.min.css"
+          type="text/css">
+
+    <!-- wis -->
+    <script type="text/javascript" src="scripts/wis.js"></script>
+    <script type="text/javascript" src="scripts/search.js"></script>
 </head>
 <body>
 
-<div id="header"></div>
+<div id="header">
+
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="background-color:white!important;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="">Grassroots Infrastructure</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://wheatis.tgac.ac.uk/grassroots/api/">Grassroots API</a></li>
+                </ul>
+                <img class="navbar-nav navbar-right" style="height:50px;" src="images/logo.png"/>
+            </div>
+        </div>
+    </nav>
+</div>
 
 <div class="container center-block">
     <div class="jumbotron">
@@ -48,11 +92,17 @@
 
 <script type="text/javascript">
     jQuery(document).ready(function () {
-        $("#header").load("header.html");
-        $("#footer").load("footer.html");
     });
 </script>
 
-<div id="footer"></div>
+<div id="footer">
+    <br/>
+
+    <p>
+        &copy; 2015 - 2017
+        Brought to you by <a href="http://www.earlham.ac.uk/" target="_blank">Earlham Institute</a>
+    </p>
+
+</div>
 </body>
 </html>
